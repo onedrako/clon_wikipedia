@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Hoefler Text';
+    src: url('./fonts/Hoefler\ Text\ Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+main{
+    width: 100vw;
+    margin-bottom: 2rem;
+}
+
+main .main-section{
+    width: 100vw;
+}
+
+main div div a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3366cc;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+main div div h2{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #54595d;
+    font-weight: lighter;
+}
+
+/*Letras Wikipedia*/
+
+main .principal_name{
+    text-align:center;
+    margin-top: 10rem;
+}
+
+main .principal_name_wikipedia{
+    display: flex;
+    justify-content: center;
+    font-family: "Hoefler Text";
+    height: 5rem;
+}
+
+main .principal_name_wikipedia h1{
+    display: flex;
+    font-size: 5rem;
+    font-weight:normal;
+    font-family: "Hoefler Text";
+}
+
+main .principal_name_wikipedia .letters_minium{
+    font-size: 3rem;
+    align-items:flex-end;
+    
+}
+
+/*Texto debajo de nombre*/
+
+main .principal_name p{
+    font-size: 2rem;
+    margin-top: .2rem;
+    color: #54595d;
+}
+
+/*Primeros dos idiomas*/
+
+main .main-section .language-box1{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+main .main-section .language-box1-left{
+    padding-right: 8rem;
+}    
+
+main .main-section .language-box1-right{
+    padding-left: 8rem;
+}  
+
+/*Seccion Columna*/
+
+main .main-section .language-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 25rem;
+    width: 60rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+main .main-section .language-column div{
+    justify-content: space-evenly;
+    width: 15rem;
+    
+}
+
+main .main-section .language-column div div{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Columna Izquierda*/
+
+main .main-section .language-column .language-column-left{
+    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    margin-right: 3rem;
+}
+
+#language-column-russian{
+   width: 20rem;
+}
+
+/*Columna Derecha*/
+
+
+main .main-section .language-column .language-column-right{
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+#language-column-french{
+   width: 20rem;
+}
+
+main .main-section .language-column .logo{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/600px-Wikipedia_Logo_1.0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25rem;
+    height: 25rem;
+    justify-self: center; /*Usar para alinear a si mismo en el centro del contenedor padre*/
+}
+
+/*Columna Derecha*/
+
+main .main-section .language-box2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+main .main-section .language-box2-left{
+    padding-right: 8rem;
+}    
+
+main .main-section .language-box2-right{
+    padding-left: 8rem;
+}  
+
+/*Barra de busqueda*/
+
+main .search-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    margin: 2rem auto;
+    margin-top: 4rem;
+    border: solid #a2a9b1 0.1rem;
+}
+
+main .search-bar input{
+    border: none;
+    width: 73%;
+    height: 4rem;
+    margin-left: 2rem;
+    outline: none;
+    font-size: 2rem;
+}
+
+main .search-bar div{
+    display: flex;
+    height: 3rem;
+    width: 12%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .search-bar div select{
+    border: none;
+    width: 1.5rem;
+    margin: .5rem;
+    color: #54595d;
+}
+
+main .search-bar span{
+    color: #54595d;
+}
+
+main .search-bar button{
+    background-image: url(http://assets.stickpng.com/thumbs/59cfc4d2d3b1936210a5ddc7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:30%;
+    width: 16%;
+    height: 100%;
+    background-color: #36c;
+    border: none;
+}
+
+main .search-bar button:hover{
+    background-color: rgb(39, 106, 250);
+}
+
+main .search-bar:hover{  
+  border:  #36c solid 0.2rem;
+}
+
+/*Barra de Lenguaje*/
+
+main .language{
+    display: flex;
+    justify-content: center;
+}
+
+
+main .language-button{
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 4rem;
+    width: 32rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3366cc;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: #a2a9b1 solid .1rem;
+    justify-content: center;
+}
+
+main .language-button h4{
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+main .language-button select{
+    display: inline-block;
+    border: none;
+    width: 1.5rem;
+    margin: 0 auto;
+    color : #3366cc;
+    background-color:  #f8f9fa;
+    height: 100%;
+}
+
+/*Estilo de Lineas laterales*/
+
+main .language hr{
+    display: inline-block;
+    width: 7.5rem;
+    margin: auto 2rem;
+    }
+
+/*footer*/
+
+footer{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#54595d;
+    width: 100vw;
+    height: 55rem;
+}
+
+
+footer .projects{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    height: 85%;
+    margin-bottom: 3rem;
+}
+
+.projects .projects-left{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    align-items: flex-end;
+}
+
+.projects a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3366cc;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/*Fundación Wikipedia*/
+
+.projects .wikipedia-fundation{
+    display: flex;
+    align-items: center;
+    margin: 2rem 2rem;
+    width: 75%;
+}
+
+.projects div div img{
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.projects .wikipedia-fundation p{
+  margin-right: 4rem; 
+}
+
+/*Descarga*/
+
+.projects .download{
+    display: flex;
+    align-items:flex-start;
+    background-color: #f8f9fa;
+    width: 75%;
+    margin: 2rem 2rem;
+}
+
+.projects .download p{
+    margin-right: 4rem; 
+    margin-bottom: 2rem;
+}
+
+.projects .download img{
+    margin-right: 1rem;
+}  
+
+.projects .download #download-android, #download-ios {
+    margin: 2rem;
+}
+
+#download-android img, #download-ios img{
+    width: 12rem; 
+}
+
+/*Wiki Projects*/
+
+footer .projects .projects-wiki{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem auto;
+}
+
+footer .projects .projects-wiki div div{
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    height: 25%;
+    text-align:start;
+    align-content:center;
+}    
+
+footer .projects .projects-wiki div div img{
+    justify-self: right;
+}    
+
+footer .projects .projects-wiki div div a{
+    align-self: center;
+}    
+
+footer .terms{
+    display: flex;
+    width: 100vw;
+    height: 15%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .terms a, footer .terms p{
+    display: inline-block;
+    margin: 0 2rem;
+    text-decoration:none;
+}
+
+footer .terms p > a{
+    margin: 0 auto;
+    color: #3366cc;
+}
+
+footer .terms a{
+    color: #3366cc;
+}
+
+ 
+
+/*display: flex;
+align-items:flex-start;
+background-color: #f8f9fa;
+width: 75%;
+margin: 2rem 2rem;*/
